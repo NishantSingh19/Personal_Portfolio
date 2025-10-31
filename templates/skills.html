@@ -1,0 +1,143 @@
+{% extends "base.html" %} {% block title %}Skills | Portfolio{% endblock title
+%} {% block content %}
+<main class="main">
+  <h1 class="_heading">Skills -</h1>
+  <section class="section">
+    <div class="interest">Programming Languages</div>
+    <div class="space">
+      <div class="wrapper">
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/python.svg")}}"
+          alt="img">
+          <p>Python</p>
+        </div>
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/javascript.svg")}}"
+          alt="img">
+          <p>Javascript</p>
+        </div>
+      </div>
+    </div>
+    <hr color="grey">
+    <br>
+    <div class="interest">Web Development</div>
+    <div class="space">
+      <div class="wrapper">
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/html5.svg")}}"
+          alt="img">
+          <p>HTML</p>
+        </div>
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/css3.svg")}}"
+          alt="img">
+          <p>CSS</p>
+        </div>
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/flask.svg")}}"
+          alt="img">
+          <p>Flask</p>
+        </div>
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/streamlit.png")}}"
+          alt="img">
+          <p>Streamlit</p>
+        </div>
+      </div>
+    </div>
+    <hr color="grey">
+    <br>
+    <div class="interest">Data Analysis & Visualization</div>
+    <div class="space">
+      <div class="wrapper">
+        <div class="card">
+          <img style="width: 50%;" src="{{url_for('static', filename="/logos/numpy.svg")}}"
+          alt="img">
+          <p>NumPy</p>
+        </div>
+        <div class="card">
+          <img style="width: 50%;" src="{{url_for('static', filename="/logos/pandas.svg")}}"
+          alt="img">
+          <p>Pandas</p>
+        </div>
+        <div class="card">
+          <img style="width: 50%;" src="{{url_for('static', filename="/logos/matplotlib.svg")}}"
+          alt="img">
+          <p>Matplotlib</p>
+        </div>
+        <div class="card">
+          <img style="width: 50%;" src="{{url_for('static', filename="/logos/seaborn.svg")}}"
+          alt="img">
+          <p>Seaborn</p>
+        </div>
+        <div class="card">
+          <img style="width: 22%;" src="{{url_for('static', filename="/logos/plotly.jpeg")}}"
+          alt="img">
+          <p>Plotly</p>
+        </div>
+      </div>
+    </div>
+    <hr color="grey">
+    <br>
+    <div class="interest">Extra</div>
+    <div class="space">
+      <div class="wrapper">
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/mysql.svg")}}"
+          alt="img">
+          <p>MySQL</p>
+        </div>
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/api.png")}}"
+          alt="img">
+          <p>APIs</p>
+        </div>
+      </div>
+    </div>
+    </div>  
+    <hr color="grey">
+    <br>
+    <div class="interest">Version Control
+    </div>
+    <div class="space">
+      <div class="wrapper">
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/git.svg")}}"
+          alt="img">
+          <p>Git</p>
+        </div>
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/github.svg")}}"
+          alt="img">
+          <p>Github</p>
+        </div>
+      </div>
+    </div>
+    </div>  
+    <hr color="grey">
+    <br>
+    <div class="interest">AI & Machine Learning
+    </div>
+    <div class="space">
+      <div class="wrapper">
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/scikit-learn.png")}}"
+          alt="img">
+          <p class="data_science">Scikit Learn</p>
+        </div>
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/data-science.png")}}"
+          alt="img">
+          <p class="data_science">Data Science</p>
+        </div>
+        <div class="card">
+          <img src="{{url_for('static', filename="/logos/curve.png")}}"
+          alt="img">
+          <p class="data_science">Statistics</p>
+        </div>
+      </div>
+    </div>
+    </div>  
+  </section>
+</main>
+{% endblock content %}

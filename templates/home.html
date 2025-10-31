@@ -1,0 +1,56 @@
+{% extends "base.html" %} {% block title %}Home | Portfolio{% endblock title %}
+{% block content %}
+<main class="main">
+
+  <section class="section">
+    <div class="profile">
+      <span class="hello">Hello, </span> <span class="i">I'm </span>
+      <span class="name">Nishant</span>
+    </div>
+    <div class="interest">Aspiring Data Scientist | Python Enthusiast</div>
+    <div class="summary">
+      <div class="text">
+        <p>
+          I'm Nishant, a curious and self-motivated developer who likes to use
+          code to make useful, real-world solutions. I started out as a
+          front-end developer, making websites that worked on all devices with
+          HTML, CSS, and JavaScript.
+          <img
+            class="pic"
+            src="{{url_for('static', filename='images/Nishant_Image.png')}}"
+            alt=""
+          />
+          Along the way, I became very interested in Python, which made me want
+          to learn more about backend development and projects that focus on
+          data.
+        </p>
+        <br />
+        <p>
+          I've worked on a lot of projects that use APIs, databases like MySQL,
+          and Git for version control. I'm fine with taking a problem, breaking
+          it down, and building something that works from scratch.
+        </p>
+        <br />
+        <p>
+          Recently, I've been learning more about data science. I like using
+          tools like Pandas and Numpy to look at and analyze data. I'm also
+          learning more about machine learning and how to make data
+          visualizations. I'm excited about how data can help us make better
+          choices and make technology better. I'm currently looking for chances
+          to grow, work with others, and solve problems that matter and make a
+          difference.
+        </p>
+        <br />
+      </div>
+    </div>
+    <a
+      href="{{url_for('static', filename='Nishant_Singh_Resume.pdf')}}"
+      class="resume_button"
+      target="blank"
+    >
+      Download Resume</a
+    >
+  </section>
+</main>
+<div class="sidebar"></div>
+{% endblock content %}

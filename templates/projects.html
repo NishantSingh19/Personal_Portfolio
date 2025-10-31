@@ -1,0 +1,192 @@
+{% extends "base.html" %} {% block title %}Projects | Portfolio{% endblock title
+%} {% block content %}
+<main class="main">
+  <h1 class="_heading">Projects -</h1>
+  <section class="section project">
+    <div class="project_heading">Netflix Movie Recommendation System</div>
+    <div class="project_content">
+      <ul class="project_ul">
+        <li>⚙️ Tech Stack :</li>
+        <li>
+          <img
+            src="{{url_for('static', filename='./logos/python.svg')}}"
+            alt="img"
+          /><span> Python </span>
+        </li>
+        <li>
+          <img
+            src="{{url_for('static', filename='./logos/pandas.png')}}"
+            alt="img"
+          /><span> Pandas </span>
+        </li>
+        <li>
+          <img
+            src="{{url_for('static', filename='./logos/plotly.jpeg')}}"
+            alt="img"
+          /><span> Plotly </span>
+        </li>
+        <li>
+          <img
+            src="{{url_for('static', filename='./logos/streamlit.png')}}"
+            alt="img"
+          /><span> Streamlit </span>
+        </li>
+        <li>
+          <img
+            src="{{url_for('static', filename='./logos/api.png')}}"
+            alt="img"
+          /><span> API </span>
+        </li>
+      </ul>
+      <ul class="project_extra">
+        <li>
+          <span> 🌐 Website :</span>
+          <a
+            href="https://netflix-recommendation-system-mwcourqf8sbgnfamblscyq.streamlit.app/"
+            target="_blank"
+            >Website</a
+          >
+        </li>
+        <li>
+          <span>🔗 Code :</span>
+          <a
+            href="https://github.com/NishantSingh19/Netflix_Recommendation_System"
+            target="_blank"
+            >Github Repository</a
+          >
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <div class="image_container">
+      <img
+        class="pro_img"
+        src="{{url_for('static', filename='./Screen Captures/NMRS/NMRS_1.jpg')}}"
+        alt="Img not support"
+      />
+      <img
+        class="pro_img"
+        src="{{url_for('static', filename='./Screen Captures/NMRS/NMRS_2.jpg')}}"
+        alt="Img not support"
+      />
+      <img
+        class="pro_img"
+        src="{{url_for('static', filename='./Screen Captures/NMRS/NMRS_3.jpg')}}"
+        alt="Img not support"
+      />
+      <img
+        class="pro_img"
+        src="{{url_for('static', filename='./Screen Captures/NMRS/NMRS_4.jpg')}}"
+        alt="Img not support"
+      />
+    </div>
+    <hr />
+    <div class="project_about">
+      <p>About -</p>
+      This is an interactive Netflix Dashboard built with Streamlit, Plotly, and
+      Pandas. It explores Netflix data to show insights like trending genres,
+      most active countries, and rating patterns. You can also get personalized
+      movie suggestions with posters using the OMDb API. The project combines
+      data analysis and visualization to make exploring Netflix’s content
+      simple, fun, and informative.
+    </div>
+  </section>
+
+  <section class="section project">
+    <div class="project_heading">Video Game Sales Dashboard</div>
+    <div class="project_content">
+      <ul class="project_ul">
+        <li>⚙️ Tech Stack :</li>
+        <li>
+          <img
+            src="{{url_for('static', filename='./logos/python.svg')}}"
+            alt="img"
+          /><span> Python </span>
+        </li>
+        <li>
+          <img
+            src="{{url_for('static', filename='./logos/pandas.png')}}"
+            alt="img"
+          /><span> Pandas </span>
+        </li>
+        <li>
+          <img
+            src="{{url_for('static', filename='./logos/plotly.jpeg')}}"
+            alt="img"
+          /><span> Plotly </span>
+        </li>
+        <li>
+          <img
+            src="{{url_for('static', filename='./logos/streamlit.png')}}"
+            alt="img"
+          /><span> Streamlit </span>
+        </li>
+      </ul>
+      <ul class="project_extra">
+        <li>
+          <span> 🌐 Website :</span>
+          <a
+            href="https://videogamesalesdashboard-fxqxv5w7hg6erzuhfxbdf8.streamlit.app/"
+            target="_blank"
+            >Website</a
+          >
+        </li>
+        <li>
+          <span>🔗 Code :</span>
+          <a
+            href="https://github.com/NishantSingh19/Video_Game_Sales_Dashboard"
+            target="_blank"
+            >Github Repository</a
+          >
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <div class="image_container">
+      <img
+        class="pro_img"
+        src="{{url_for('static', filename='./Screen Captures/VGS/VGS_1.jpg')}}"
+        alt="Img not support"
+      />
+      <img
+        class="pro_img"
+        src="{{url_for('static', filename='./Screen Captures/VGS/VGS_2.jpg')}}"
+        alt="Img not support"
+      />
+      <img
+        class="pro_img"
+        src="{{url_for('static', filename='./Screen Captures/VGS/VGS_3.jpg')}}"
+        alt="Img not support"
+      />
+      <img
+        class="pro_img"
+        src="{{url_for('static', filename='./Screen Captures/VGS/VGS_4.jpg')}}"
+        alt="Img not support"
+      />
+      <img
+        class="pro_img"
+        src="{{url_for('static', filename='./Screen Captures/VGS/VGS_5.jpg')}}"
+        alt="Img not support"
+      />
+    </div>
+    <hr />
+    <div class="project_about">
+      <p>About -</p>
+      This interactive dashboard analyzes global video game sales data using
+      Streamlit, Pandas, and Plotly. It helps explore insights about the
+      top-selling games, platforms, genres, and publishers across different
+      regions. Users can switch between tabs to see trends, compare regional
+      sales, and discover which genres or platforms dominated each year. The
+      dashboard turns raw data into clear, visual stories that make exploring
+      the gaming industry both fun and insightful.
+    </div>
+  </section>
+
+  <!-- Image Preview Popup-->
+  <!--
+  <div class="preview" id="preview">
+    <span id="closeBtn">X</span>
+    <img id="previewImage" src="" alt="Preview" />
+  </div> -->
+</main>
+{% endblock content %}

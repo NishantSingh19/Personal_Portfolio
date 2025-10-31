@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='css/style.css')}}"
+    />
+    <title>{% block title %}Portfolio{% endblock title %}</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="navbar">
+        <div class="logo">
+          <span class="part_one">Port</span><span class="part_two">folio</span>
+        </div>
+        <div class="lists">
+          <ul class="ul">
+            <a href="/"
+              ><img src="{{url_for('static', filename='./images/home-button.png')}}" alt="img"><span>Home</span></a
+            >
+            <a href="/experience"
+              ><img src="{{url_for('static', filename='./images/suitcase.png')}}" alt="img"> <span> Experience</span></a
+            >
+            <a href="/education"
+              ><img src="{{url_for('static', filename='./images/graduation-hat.png')}}" alt="img">
+              <span> Education</span></a
+            >
+            <a href="/skills"
+              ><img src="{{url_for('static', filename='./images/lightbulb.png')}}" alt="img"> <span> Skills</span></a
+            >
+            <a href="/projects"
+              ><img src="{{url_for('static', filename='./images/open-folder.png')}}" alt="img"> <span> Projects</span></a
+            >
+            <a href="/certificates"
+              ><img src="{{url_for('static', filename='./images/diploma.png')}}" alt="img"> <span> Certifications</span></a
+            >
+            <a  href="/about"
+              ><img src="{{url_for('static', filename='./images/information.png')}}" alt="img"> <span> About</span></a
+            >
+          </div>
+        </ul>
+        <div class="ham">
+          <i style="cursor: pointer;" class="fas fa-bars lines"></i>
+          <i style="cursor: pointer;" class="fas fa-xmark cross"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="sidebar"></div>
+    {% block content %}{% endblock content%}
+    <footer>
+      <div class="footer">
+        <div class="bottom">
+          <div class="logo portfolio">
+            <span class="part_one">Port</span><span class="part_two">folio</span>
+          </div>
+          <div class="social">
+            <a target="_blank" data-title="Linkedin" href="https://linkedin.com/in/nishantkumarsingh19"><i class="fa-brands fa-linkedin linkedin"></i></a>
+
+            <a target="_blank" data-title="Github" href="https://github.com/NishantSingh19"><i class="fa-brands fa-github github"></i></a>
+
+            <a target="_blank" data-title="Mail" href="mailto:nsraj1401@gmail.com"><i class="fas fa-envelope-circle-check envelope"></i></a>
+          </div>
+        </div>
+        <div class="nav_icons">
+          <div class="icons">
+            <ul>
+                <a data="Home" href="/"
+                ><i class="fa-solid fa-house"></i><span> Home</span></a
+                >
+              <a data="Experience" href="/experience"
+                ><i class="fa-solid fa-briefcase"></i> <span>  Experience</span></a
+              >
+              <a data="Education" href="/education"
+                ><i class="fa-solid fa-graduation-cap"></i>
+                <span> Education</span></a
+              >
+              <a data="Skills" href="/skills"
+                ><i class="fa-solid fa-lightbulb"></i> <span>  Skills</span></a
+              >
+              <a data="Projects" href="/projects"
+                ><i class="fa-solid fa-folder-open"></i> <span>  Projects</span></a
+              >
+              <a data="Certifications" href="/certificates"
+                ><i class="fa-solid fa-file"></i> <span>  Certifications</span></a
+              >
+              <a data="About" href="/about"
+                ><i class="fa-solid fa-circle-info"></i> <span>  About</span></a
+              >
+            </ul>
+          </div>
+        </div>
+        <hr width="100%" color="grey">
+        <div class="copyright">
+          <p class="credit">&copy; Built with ❤️ & ☕ by <span>Nishant Singh</span> - 2025</p>
+        </div>
+      </div>
+    </footer>
+    <script src="{{url_for('static', filename="script/script.js")}}"></script>
+  </body>
+</html>

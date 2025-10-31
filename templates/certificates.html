@@ -1,0 +1,137 @@
+{% extends "base.html" %} {% block title %}Certifications | Portfolio{% endblock
+title %} {% block content %}
+<main class="main">
+  <h1 class="_heading">Certifications -</h1>
+  <section class="section">
+    <div class="interest">
+      <img
+        style="border-radius: 20px"
+        id="icons"
+        src="{{url_for('static', filename='./logos/cwh.webp')}}"
+        alt="icon"
+      />
+      CodeWithHarry
+    </div>
+    <div class="summary">
+      <div id="contain">
+        <div id="image">
+          <img
+            id="certificate"
+            src="{{url_for('static', filename='./images/Data_Science.png')}}"
+            alt=""
+          />
+        </div>
+        <div class="details">
+          <li>✒️ Title - Data Science</li>
+          <li>🏢 Organization - CodeWithHarry</li>
+          <li>📅 Date of Completion - Septmeber 7, 2025</li>
+          <li>🪪 Credential ID - 1HAR89GV</li>
+          <li id="describe">
+            📃 Description - This course provided a complete foundation in Data
+            Science, covering essential Python libraries like NumPy, Pandas,
+            Matplotlib, and Scikit-learn. It focused on data preprocessing,
+            analysis, and visualization while also introducing machine learning
+            basics. Through practical exercises and projects, I gained hands-on
+            experience in building data-driven solutions, preparing me for
+            real-world data science tasks.
+          </li>
+          <div id="buttons">
+            <a
+              id="download_certificate"
+              href="{{url_for('static', filename='./images/Data_Science.png')}}"
+              target="_blank"
+              ><i class="fas fa-download"></i>Download Certificate</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="interest">
+      <img
+        id="icons"
+        src="{{url_for('static', filename='./logos/google.png')}}"
+        alt="icon"
+      />
+      Google Cloud & Simplilearn
+    </div>
+    <div class="summary">
+      <div id="contain">
+        <div id="contain">
+          <img
+            id="certificate"
+            src="{{url_for('static', filename='./images/Google_Certificate.jpg')}}"
+            alt=""
+          />
+        </div>
+        <div class="details">
+          <li>✒️ Title - Introduction to Generative AI</li>
+          <li>🏢 Organization - Google Cloud & Simplilearn</li>
+          <li>📅 Date of Completion - Septmeber 10, 2025</li>
+          <li>🪪 Credential ID - 8948189</li>
+          <li id="describe">
+            📃 Description - This course introduced me to the fundamentals of
+            Generative AI and Large Language Models (LLMs). I learned about AI
+            model architectures, prompt engineering, responsible AI practices,
+            and real-world applications of generative models. The program
+            emphasized cloud-based AI solutions and their potential to transform
+            industries. It provided a strong starting point to explore advanced
+            AI tools and frameworks.
+          </li>
+          <div id="buttons">
+            <a
+              id="download_certificate"
+              href="{{url_for('static', filename='./images/Google_Certificate.jpg')}}"
+              target="_blank"
+              ><i class="fas fa-download"></i>Download Certificate</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="interest">
+      <img
+        id="icons"
+        src="{{url_for('static', filename='./logos/HackerRank.png')}}"
+        alt="icon"
+      />
+      HackerRank
+    </div>
+    <div class="summary">
+      <div id="contain">
+        <div id="contain">
+          <img
+            id="certificate"
+            src="{{url_for('static', filename='./images/Hacker Rank Python Certificate.png')}}"
+            alt=""
+          />
+        </div>
+        <div class="details">
+          <li>✒️ Title - Python (Basic)</li>
+          <li>🏢 Organization - HackerRank</li>
+          <li>📅 Date of Completion - April 02, 2025</li>
+          <li>🪪 Credential ID - F6F6EF307FEC</li>
+          <li id="describe">
+            📃 Description - I gained the HackerRank Python (Basic) Certificate
+            in April 2025, which shows my understanding of Python fundamentals
+            like data types, loops, conditionals, and functions. It reflects my
+            ability to solve coding problems and apply Python effectively in
+            practical scenarios.
+          </li>
+          <div id="buttons">
+            <a
+              id="download_certificate"
+              href="{{url_for('static', filename='./images/Hacker Rank Python Certificate.png')}}"
+              target="_blank"
+              ><i class="fas fa-download"></i>Download Certificate</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock content %}

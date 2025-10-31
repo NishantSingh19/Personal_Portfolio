@@ -1,0 +1,78 @@
+{% extends "base.html" %} {% block title %}Education | Portfolio{% endblock
+title %} {% block content %}
+<main class="main">
+  <h1 class="_heading">Education -</h1>
+  <section class="section">
+    <div class="interest">Bachelor of Computer Applications (BCA)</div>
+    <div class="summary">
+      <div class="study">
+        <div class="details">
+          <li>
+            🎓 College Name -
+            <a target="_blank" href="https://www.smslucknow.ac.in"
+              >School of Management Sciences
+            </a>
+          </li>
+          <li>
+            🏫 Affilated From-
+            <a target="_blank" href="https://www.lkouniv.ac.in"
+              >Lucknow University
+            </a>
+          </li>
+          <li>📆 Duration -<span> 2022 - 2025</span></li>
+          <li>🎖️ Score (CGPA) -<span> 7.07</span></li>
+          <li>📊 Score (in %) -<span> 67.17%</span></li>
+          <li>
+            📁 Project -<span>
+              Venue Look : Book Resorts for Different Occassions</span
+            >
+          </li>
+        </div>
+        <div>
+          <img
+            src="{{url_for('static', filename='./images/college.jpg')}}"
+            alt=""
+          />
+        </div>
+      </div>
+      <br />
+      I completed an internship in web development at CodSoft, where I made a
+      portfolio website. The project had important parts like About, Skills,
+      Projects, and Contact. It was made with JavaScript and responsive layout
+      techniques. This experience helped me get better at frontend development,
+      organizing projects, and coding in real life.
+    </div>
+  </section>
+  <section class="section">
+    <div class="interest">Intermediate (12th)</div>
+    <div class="summary">
+     <div class="study">
+      <div class="details">
+        <li>🏫 School Name - <span>Manasthali Education Centre </span></li>
+        <li>🎯 Board -<span> CBSE</span></li>
+        <li>📚 Stream -<span> Science</span></li>
+        <li>🎖️ Score (CGPA) -<span> 7.02</span></li>
+        <li>📊 Score (in %) -<span> 66.67%</span></li>
+        <li>📆 Year -<span> 2021 - 2022</span></li>
+      </div>
+      <div><img src="{{url_for('static', filename='./images/12th.jpg')}}" alt=""></div>
+    </div> 
+    </div>
+  </section>
+  <section class="section">
+    <div class="interest">Matriculation (10th)</div>
+    <div class="summary">
+     <div class="study">
+      <div class="details">
+        <li>🏫 School Name - <span>Manasthali Education Centre </span></li>
+        <li>🎯 Board -<span> CBSE</span></li>
+        <li>🎖️ Score (CGPA) -<span> 8.13</span></li>
+        <li>📊 Score (%) -<span> 77.2%</span></li>
+        <li>📆 Year -<span> 2019 - 2020</span></li>
+      </div>
+      <div><img src="{{url_for('static', filename='./images/10th.jpg')}}" alt=""></div>
+    </div>
+    </div>
+  </section>
+</main>
+{% endblock content %}

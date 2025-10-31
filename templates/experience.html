@@ -1,0 +1,26 @@
+{% extends "base.html" %} {% block title %}Experience | Portfolio{% endblock
+title %} {% block content %}
+<main class="main">
+  <h1 class="_heading">Experience -</h1>
+  <section class="section">
+    <div class="interest">Web Development Internship</div>
+    <div class="summary">
+      <div class="study">
+        <div class="details">
+          <li>💻 Company Name - <a style="color: white;" target="_blank" href="https://www.codsoft.in">CodSoft </a></li>
+          <li>📆 Duration -<span> Apr 2024 - May 2024</span></li>
+          <li>📁 Project Name -<span> Portfolio</span></li>
+          <li>💡Skills -<span> HTML, CSS and JavaScript</span></li>
+        </div>
+        <div><img src="{{url_for('static', filename='./images/web_design.jpg')}}" alt=""></div>
+    </div>
+      <br>
+      I completed an internship in web development at CodSoft, where I made a
+      portfolio website. The project had important parts like About, Skills,
+      Projects, and Contact. It was made with JavaScript and responsive layout
+      techniques. This experience helped me get better at frontend development,
+      organizing projects, and coding in real life.
+    </div>
+  </section>
+</main>
+{% endblock content %}

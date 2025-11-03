@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap");
+
 @font-face {
   font-family: "Lato";
   src: url(/static/Fonts/Lato-Regular.ttf);
@@ -68,30 +70,37 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  height: 66px;
 }
 
 .logo {
-  height: 66px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.33rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
   font-style: italic;
+  position: relative;
+  gap: 5px;
 }
 
-.logo .part_one {
-  text-underline-offset: 3px;
-  text-decoration: underline;
-  color: rgb(0, 200, 0);
+.quill_logo {
+  height: 30px;
+  rotate: 350deg;
+  /* transform: scaleX(-1); */
 }
 
-.logo .part_two {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  color: gold;
+.web_name {
+  color: rgb(21, 134, 241);
+  text-decoration: underline 1px solid rgb(21, 134, 241);
+  text-underline-offset: 6px;
+  margin-top: 3px;
+  margin-left: 3px;
+  position: absolute;
+  left: 102%;
+  top: 10%;
+  font-size: 1.25rem;
 }
 
 .lists ul {
@@ -101,34 +110,33 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }
 
 .lists ul a {
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   text-align: center;
-  font-size: 14px;
-  font-family: "Fira", sans-serif;
+  font-size: 12px;
+  font-family: "Open_Sans", sans-serif;
   padding: 7px 8px 7px 7px;
-  border: 2px solid transparent;
-  border-radius: 4px;
+  border: 1px solid transparent;
   color: white;
   text-decoration: none;
   transition: border 0.5s ease;
 
   &:hover {
     cursor: pointer;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid rgb(200, 200, 200);
     padding: 7px 8px 7px 7px;
   }
 }
 
 .lists ul a img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   background: white;
   padding: 4px;
   border-radius: 4px;
@@ -262,7 +270,7 @@ section {
 }
 
 hr {
-  width: 97%;
+  width: 99%;
   margin: auto;
 }
 
@@ -312,6 +320,11 @@ hr {
   color: #4e4;
 }
 
+.details #describe::before {
+  content: "";
+  margin: 0;
+}
+
 .pic {
   width: 220px;
   height: auto;
@@ -345,11 +358,12 @@ hr {
 
 ._heading {
   padding: 20px;
-  text-decoration: 1px solid underline;
+  text-decoration: 2px solid underline;
   text-underline-offset: 6px;
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
+  backdrop-filter: blur(5px);
 }
 
 nav {
@@ -389,7 +403,7 @@ nav {
 }
 
 .resume_button {
-  color: #4e4;
+  color: rgb(0, 217, 255);
   background: transparent;
   border-radius: 6px;
   padding: 12px;
@@ -397,12 +411,12 @@ nav {
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
-  border: 2px solid #4e4;
+  border: 2px solid rgb(0, 217, 255);
   transition: all 0.33s;
 
   &:hover {
-    background: rgba(0, 99, 0, 0.33);
-    border: 2px solid #4e4;
+    background: rgba(0, 217, 255, 0.15);
+    border: 2px solid rgb(0, 217, 255);
     text-decoration: underline;
     text-underline-offset: 4px;
     border-radius: 10px;
@@ -424,7 +438,7 @@ nav {
   align-items: normal;
   justify-content: center;
   flex-direction: column;
-  padding: 15px 25px;
+  padding: 15px;
   transition: all 0.33s ease;
   transform: translateX(100%);
   border: 1px solid white;
@@ -497,17 +511,40 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px 14px;
+  height: 34px;
+  width: 34px;
   border: 2px solid transparent;
+  font-size: 18px;
   border-radius: 50%;
-  color: black;
+  color: white;
   text-decoration: none;
   background: rgb(250, 250, 250);
-  font-size: 22px;
   transition: all 0.75s ease;
+}
+
+.linkedin {
+  background-color: rgb(0, 59, 118);
+  color: white;
 
   &:hover {
-    background: rgba(222, 222, 222, 0.75);
+    border: 2px solid white;
+  }
+}
+
+.github {
+  background-color: black;
+  color: white;
+
+  &:hover {
+    border: 2px solid white;
+  }
+}
+
+.envelope {
+  background-color: rgb(0, 145, 255);
+  color: white;
+
+  &:hover {
     border: 2px solid white;
   }
 }
@@ -519,14 +556,15 @@ footer {
   left: 50%;
   color: white;
   transform: translateX(-50%);
-  background-color: #151515;
-  padding: 6px 12px;
+  background-color: #0e1117;
+  padding: 5px 10px;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   z-index: 10;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  animation: popup 0.5s 1 ease;
+  border: 2px solid white;
+  animation: popup 0.75s 1 ease;
 }
 
 .ham i[data]:hover:after {
@@ -536,7 +574,7 @@ footer {
   left: 20%;
   color: white;
   transform: translateX(-50%);
-  background-color: #151515;
+  background-color: #0e1117;
   padding: 8px 12px;
   border-radius: 4px;
   font-size: 14px;
@@ -551,9 +589,17 @@ footer {
   position: absolute;
   top: -33%;
   left: 50%;
-  color: #151515;
+  color: #0e1117;
   transform: translateX(-50%);
   z-index: 10;
+}
+
+.social a[data-title="Linkedin"]:hover::after {
+  background: rgb(0, 59, 118);
+}
+
+.social a[data-title="Mail"]:hover::after {
+  background: rgb(0, 145, 255);
 }
 
 .icons {
@@ -574,7 +620,7 @@ footer {
   list-style-type: none;
   display: flex;
   margin: 20px 0 10px 0;
-  padding: 0 15px;
+  /* padding: 0 15px; */
 }
 
 .icons ul a i {
@@ -599,7 +645,7 @@ footer {
     border: 2px solid white;
     border-radius: 6px;
     padding: 7px 8px 7px 7px;
-    background: #222222;
+    background: #222222bf;
 
     i {
       animation: animate 1 1.5s alternate-reverse ease-in-out;
@@ -683,7 +729,6 @@ footer {
   text-align: left;
   font-size: 14px;
   font-family: "Open_Sans", sans-serif;
-  line-height: 2;
   color: rgb(200, 200, 200);
 }
 
@@ -691,15 +736,16 @@ footer {
   text-decoration: none;
   padding: 3px 15px;
   border-radius: 8px;
-  background: rgba(0, 255, 0, 0.25);
-  border: 2px solid rgb(0, 255, 0);
-  color: rgb(0, 255, 0);
+  background: transparent;
+  border: 2px solid rgb(0, 217, 255);
+  color: rgb(0, 217, 255);
   text-align: center;
   margin: 10px;
+  font-size: 14px;
   transition: all 0.33s;
 
   &:hover {
-    background: rgba(0, 255, 0, 0.35);
+    background: rgb(0, 217, 255, 0.15);
     text-decoration: underline solid;
   }
 }
@@ -942,11 +988,11 @@ footer {
   }
 
   .summary .details {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .summary {
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .pic {
@@ -978,11 +1024,12 @@ footer {
     left: 50%;
     color: white;
     transform: translateX(-50%);
-    background-color: #151515;
-    padding: 6px 12px;
+    background-color: #0e1117;
+    padding: 5px 8px;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 12px;
     white-space: nowrap;
+    border: 1px solid white;
     z-index: 10;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     animation: popup 0.75s 1 ease;
@@ -1024,6 +1071,18 @@ footer {
   .project_content p {
     font-size: 16px;
   }
+
+  #download_certificate {
+    font-size: 14px;
+  }
+
+  #about {
+    font-size: 15px;
+  }
+
+  .resume_button {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1052,7 +1111,7 @@ footer {
   }
 
   .summary {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .pic {
@@ -1145,6 +1204,23 @@ footer {
   .project_content p {
     font-size: 14px;
   }
+
+  #describe {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  #download_certificate {
+    font-size: 13px;
+  }
+
+  #about {
+    font-size: 14px;
+  }
+
+  .resume_button {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1173,7 +1249,7 @@ footer {
   }
 
   .summary {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .pic {
@@ -1202,7 +1278,7 @@ footer {
   .linkedin,
   .github,
   .envelope {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .copyright .credit {
@@ -1272,6 +1348,23 @@ footer {
   .project_about {
     font-size: 13px;
   }
+
+  #describe {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  #download_certificate {
+    font-size: 12px;
+  }
+
+  #about {
+    font-size: 13px;
+  }
+
+  .resume_button {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -1300,7 +1393,7 @@ footer {
   }
 
   .summary {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .icons ul a {
@@ -1368,6 +1461,23 @@ footer {
   }
 
   .project_about {
+    font-size: 12px;
+  }
+
+  #describe {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  #download_certificate {
+    font-size: 12px;
+  }
+
+  #about {
+    font-size: 13px;
+  }
+
+  .resume_button {
     font-size: 12px;
   }
 }

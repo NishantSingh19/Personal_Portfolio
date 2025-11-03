@@ -11,13 +11,15 @@
       rel="stylesheet"
       href="{{url_for('static', filename='css/style.css')}}"
     />
+    <link rel="shortcut icon" href="./static/images/Quill_Logo.png" type="image/x-icon">
     <title>{% block title %}Portfolio{% endblock title %}</title>
   </head>
   <body>
     <nav class="nav">
       <div class="navbar">
         <div class="logo">
-          <span class="part_one">Port</span><span class="part_two">folio</span>
+          <img class="quill_logo" src="{{url_for('static', filename='./images/Quill_Logo.png')}}" alt="img">
+          <p class="web_name">Portfolio</p>
         </div>
         <div class="lists">
           <ul class="ul">
@@ -56,11 +58,12 @@
     <footer>
       <div class="footer">
         <div class="bottom">
-          <div class="logo portfolio">
-            <span class="part_one">Port</span><span class="part_two">folio</span>
-          </div>
+          <div class="logo">
+          <img class="quill_logo" src="{{url_for('static', filename='./images/Quill_Logo.png')}}" alt="img">
+          <p class="web_name">Portfolio</p>
+        </div>
           <div class="social">
-            <a target="_blank" data-title="Linkedin" href="https://linkedin.com/in/nishantkumarsingh19"><i class="fa-brands fa-linkedin linkedin"></i></a>
+            <a target="_blank" data-title="Linkedin" href="https://linkedin.com/in/nishantkumarsingh19"><i class="fa-brands fa-linkedin-in linkedin"></i></a>
 
             <a target="_blank" data-title="Github" href="https://github.com/NishantSingh19"><i class="fa-brands fa-github github"></i></a>
 
